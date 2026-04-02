@@ -12,11 +12,17 @@ The system is designed with a focus on clean architecture, secure APIs, proper d
 
 ---
 
+## GitHub Repository
+
+https://github.com/anuragshrivas027/finance-dashboard-backend
+
+---
+
 ## Live API
 
 The backend is deployed and accessible here:
 
-https://your-render-url.onrender.com
+https://finance-dashboard-backend-tn1i.onrender.com
 
 You can test APIs using Postman or any API client.
 
@@ -117,11 +123,13 @@ npm install
 
 ```
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=mongodb://admin:admin123@ac-fcfuwcj-shard-00-00.yrjja7u.mongodb.net:27017,ac-fcfuwcj-shard-00-01.yrjja7u.mongodb.net:27017,ac-fcfuwcj-shard-00-02.yrjja7u.mongodb.net:27017/financeDB?ssl=true&replicaSet=atlas-rbtycb-shard-0&authSource=admin&retryWrites=true&w=majority
 JWT_SECRET=your_secret_key
 ```
 
-4. Run the server
+---
+
+## Running the Server
 
 ```
 npm run dev
@@ -145,14 +153,14 @@ Steps followed:
 3. Added environment variables:
    - MONGO_URI  
    - JWT_SECRET  
-   - PORT  
+   - PORT (set to 10000 in Render)  
 4. Set build command:
 ```
 npm install
 ```
 5. Set start command:
 ```
-npm start
+node server.js
 ```
 
 ---
